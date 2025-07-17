@@ -24,7 +24,7 @@ function RecipeList({ recipes }) {
     expandedIndex === index ? 'max-h-[500px] py-4 opacity-100' : 'max-h-0 opacity-0'
   }`}
 >
-  <div className="overflow-y-auto max-h-80 pr-2 text-sm text-gray-700 space-y-3 border-t border-orange-200">
+  <div className="overflow-y-auto max-h-80 pr-2 text-sm md:text-sm text-gray-700 space-y-3 border-t border-orange-200">
     <div>
       <strong>Bahan:</strong>
       <p>{recipe.Ingredients}</p>
