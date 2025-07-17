@@ -70,8 +70,8 @@ const filteredRecipes =
           Ada bahan apa di kulkas?
         </p>
 
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+      <div className="max-w-2xl mx-auto px-4 mb-8">
+        <div className="flex flex-wrap borderrounded-md overflow-hidden">
           {categories.map((cat) => {
             const isSelected = selectedCategories.includes(cat);
             return (
