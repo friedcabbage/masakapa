@@ -71,14 +71,14 @@ const filteredRecipes =
         </p>
 
       <div className="max-w-2xl mx-auto px-4 mb-8">
-        <div className="w-fit mx-auto grid grid-cols-2 sm:grid-cols-4 gap-[1px] overflow-hidden">
+        <div className="max-w-[360px] sm:max-w-xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-2 p-2 overflow-hidden">
           {categories.map((cat) => {
             const isSelected = selectedCategories.includes(cat);
             return (
               <div
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className={`w-25 h-10 sm:w-40 sm:h-20 text-base md:text-2xl cursor-pointer rounded-xl flex items-center justify-center text-center font-semibold capitalize border transition 
+                className={`text-base md:text-2xl cursor-pointer rounded-md aspect-square flex items-center justify-center text-center font-semibold capitalize border transition 
                   ${
                     isSelected
                       ? 'bg-green-600 text-white border-green-700'
