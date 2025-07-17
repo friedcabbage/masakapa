@@ -71,7 +71,7 @@ const filteredRecipes =
         </p>
 
       <div className="max-w-2xl mx-auto px-4 mb-8">
-        <div className="flex flex-wrap borderrounded-md overflow-hidden">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1px] border border-gray-300 overflow-hidden">
           {categories.map((cat) => {
             const isSelected = selectedCategories.includes(cat);
             return (
