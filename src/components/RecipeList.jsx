@@ -13,7 +13,7 @@ function RecipeList({ recipes }) {
         <div
           key={index}
           onClick={() => toggleExpand(index)} // 👈 make the tile clickable
-          className={`bg-orange-100 rounded-xl shadow-md border border-orange-100 overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg`}
+          className={`bg-orange-100 rounded-xl shadow-md border border-orange-300 overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg`}
         >
           <h3 className="font-bold text-base sm:text-lg text-amber-700 break-words leading-snug p-4">
             {recipe['Title Cleaned']}

@@ -113,8 +113,16 @@ const filteredRecipes =
           </div>
         )}
       </div>
+      
+      <footer className="w-full text-center py-4 mt-10 text-sm text-gray-500 border-t border-gray-200">
+      © {new Date().getFullYear()} MasakApa App. Built with ❤️ by Adelia Chitra S.
+      </footer>
+
     </div>
+
+    
   );
+
 }
 
 export default App;
