@@ -8,7 +8,7 @@ function RecipeList({ recipes }) {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-2 gap-6 max-w-xl mx-auto">
       {recipes.map((recipe, index) => (
         <div
           key={index}

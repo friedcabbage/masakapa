@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(4);
 
   useEffect(() => {
     setRecipes(recipeData);
@@ -19,7 +19,7 @@ function App() {
         ? prev.filter((c) => c !== category)
         : [...prev, category]
     );
-    setVisibleCount(6); // reset count when categories change
+    setVisibleCount(4); // reset count when categories change
   };
 
 
@@ -58,7 +58,7 @@ const filteredRecipes =
 
   const visibleRecipes = filteredRecipes.slice(0, visibleCount);
 
-  const loadMore = () => setVisibleCount((prev) => prev + 6);
+  const loadMore = () => setVisibleCount((prev) => prev + 4);
 
   return (
     <div className="flex flex-col items-center px-4 pb-12">
@@ -78,7 +78,7 @@ const filteredRecipes =
               <div
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className={`w-50 h-20 sm:w-50 sm:h-20 text-2xl cursor-pointer rounded-xl flex items-center justify-center text-center font-semibold capitalize border transition 
+                className={`w-30 h-20 sm:w-30 sm:h-20 text-2xl cursor-pointer rounded-xl flex items-center justify-center text-center font-semibold capitalize border transition 
                   ${
                     isSelected
                       ? 'bg-green-600 text-white border-green-700'
