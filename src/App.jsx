@@ -66,7 +66,7 @@ const filteredRecipes =
         <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 whitespace-nowrap">
           Masak Apa?
         </h1>
-        <p className="text-center text-lg text-gray-200 mb-6 font-semibold">
+        <p className="text-center text-lg text-gray-500 mb-6 font-semibold">
           Ada bahan apa di kulkas?
         </p>
 
@@ -81,7 +81,7 @@ const filteredRecipes =
                 className={`p-2 text-base md:text-xl cursor-pointer rounded-md flex items-center justify-center text-center font-semibold capitalize border transition 
                   ${
                     isSelected
-                      ? 'bg-green-600 text-white border-green-700'
+                      ? 'bg-green-600 text-white border-green-600'
                       : 'bg-amber-500 hover:bg-amber-600 text-white border-amber-600'
                 }`}
               >
@@ -93,7 +93,7 @@ const filteredRecipes =
         </div>
       </div>
 
-        <div className="text-m text-center text-gray-100 mb-4">
+        <div className="text-m text-center text-gray-500 mb-4">
           <p>Kategori terpilih: {selectedCategories.join(', ') || '-'}</p>
           <p>
             Menampilkan {visibleRecipes.length} dari {filteredRecipes.length} resep
