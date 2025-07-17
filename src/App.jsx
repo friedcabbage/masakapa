@@ -78,7 +78,7 @@ const filteredRecipes =
               <div
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className={`w-30 h-20 sm:w-30 sm:h-20 text-2xl cursor-pointer rounded-xl flex items-center justify-center text-center font-semibold capitalize border transition 
+                className={`w-40 h-20 sm:w-40 sm:h-20 text-2xl cursor-pointer rounded-xl flex items-center justify-center text-center font-semibold capitalize border transition 
                   ${
                     isSelected
                       ? 'bg-green-600 text-white border-green-700'
