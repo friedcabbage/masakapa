@@ -49,7 +49,7 @@ const filteredRecipes =
     ? []
     : recipes
         .filter((recipe) => {
-          const title = (recipe['Title'] || '');
+          const title = (recipe['Title Cleaned'] || '');
           return selectedCategories.every((cat) => {
             const keywords = mapCategoryToIngredients(cat).map(k => k.toLowerCase());
             return keywords.some((keyword) => {
