@@ -51,21 +51,17 @@ const filteredRecipes =
     ? []
     : recipes
         .filter((recipe) => {
-          const title = (recipe['Title Cleaned'] || '').toLowerCase();
+          const titleWords = (recipe['Title Cleaned'] || '')
+            .toLowerCase()
+            .split(/[\s,.'"-]+/); // Split on spaces and punctuation
 
           return selectedCategories.every((cat) => {
-            const keywords = mapCategoryToIngredients(cat).map(k => k.toLowerCase());
+            const keywords = mapCategoryToIngredients(cat).map((k) => k.toLowerCase());
 
-            return keywords.some((keyword) => {
-              // Escape keyword for regex and apply word boundary
-              const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-              const regex = new RegExp(`\\b${escapedKeyword}\\b`, 'i');
-              return regex.test(title);
-            });
+            return keywords.some((keyword) => titleWords.includes(keyword));
           });
         })
         .sort((a, b) => (b.Loves || 0) - (a.Loves || 0));
-
 
 
   const visibleRecipes = filteredRecipes.slice(0, visibleCount);
