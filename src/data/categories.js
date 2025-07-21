@@ -11,6 +11,10 @@ const categories = [
   'sayur',
   'jamur',
   'kentang',
+  'mie',
+  'nasi',
+  'frozen',
+  'cemilan',
 ];
 
 export default categories;
