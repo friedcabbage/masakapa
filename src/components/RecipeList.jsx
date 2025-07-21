@@ -16,7 +16,7 @@ function RecipeList({ recipes }) {
           className={`bg-orange-200 rounded-xl shadow-md border border-orange-200 overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg`}
         >
           <h3 className="font-bold text-base sm:text-lg text-amber-700 break-words leading-snug p-4">
-            {recipe['Title Cleaned']}
+            {recipe['Title']}
           </h3>
 
           <div
