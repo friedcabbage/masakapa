@@ -53,7 +53,7 @@ const filteredRecipes =
         .filter((recipe) => {
           // Combine title and ingredients (if available)
           const combinedText = (
-            (recipe['Title'] || '') + ' ' +
+            (recipe['Title Cleaned'] || '') + ' ' +
             (recipe['Ingredients'] || '')
           ).toLowerCase();
 
