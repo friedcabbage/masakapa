@@ -35,13 +35,13 @@ function App() {
       sayur: ["kacang panjang", "sayur", "sayuran", "vegetables", "brokoli", "wortel", "bayam", "kubis", "buncis", "cabbage", "spinach", "carrot", "broccoli",  "green beans", "pokcoy", "bok choy", "sawi", "kale", "terong", "tomat", "labu", "sayur asem", "vegetable mix", "kecambah", "bean sprouts", "zucchini", "tomato", "eggplant", "daun singkong", "cassava leaves", "jagung", "corn", "labu siam", "pare", "daun pepaya", "rebung", "lodeh", "sayur bayam", "kangkung", "tumis genjer"],
       jamur: ["jamur", "mushroom", "jamur kancing", "shiitake", "enoki", "oyster mushroom", "champignon", "shiitake mushroom", "enoki mushroom",  "jamur tiram", "jamur kuping", "wood ear mushroom", "button mushroom", "portobello", "cremini", "chanterelle", "morel", "fungi", "jamur crispy", "tumis jamur", "jamur merang", "jamur champignon", "jamur hitam"],
       kentang: ["kentang", "potato", "ubi", "sweet potato", "yam", "kentang manis", "ubi jalar", "kentang goreng", "french fries", "mashed potato", "baked potato", "hashbrown", "kentang rebus", "kentang kukus", "potato wedges", "baby potatoes", "crispy potato", "perkedel", "keripik kentang", "kentang balado", "kentang mustofa"],
-      mie: ["bakmie", "sohun", "mie", "bihun", "soun", "noodle", "indomie", "mie goreng", "mie rebus", "mie ayam", "mie instan", "spaghetti", "pasta", "udon", "soba", "vermicelli", "rice noodle", "egg noodle", "mie telur", "mie basah", "mie kering", "mie cap cai", "mie kuah"],
+      mie: ["kwetiaw", "kwetiau", "bakmie", "sohun", "mie", "bihun", "soun", "noodle", "indomie", "mie goreng", "mie rebus", "mie ayam", "mie instan", "spaghetti", "pasta", "udon", "soba", "vermicelli", "rice noodle", "egg noodle", "mie telur", "mie basah", "mie kering", "mie cap cai", "mie kuah"],
       nasi: ["bubur", "basmati", "basmathi", "beras", "nasi", "rice", "nasi putih", "steamed rice", "fried rice", "nasi goreng", "nasi kuning", "nasi uduk", "nasi liwet", "nasi campur", "nasi padang", "nasi goreng kampung", "nasi goreng seafood", "nasi goreng ayam", "nasi goreng spesial", "nasi goreng jawa", "nasi goreng sosis"],
       frozen: ["baso", "frozen", "es krim", "ice cream", "beku", "daging beku", "sayur beku", "buah beku", "seafood beku", "ayam beku", "nasi beku", "makanan beku", "nugget", "sosis", "bakso", "katsu", "ebi", "fish fillet", "tempura", "corn dog", "frozen food", "frozen vegetables", "frozen fruits", "frozen chicken", "frozen seafood", "frozen rice", "frozen nuggets", "frozen sausages", "frozen meatballs", "frozen katsu", "frozen ebi", "frozen fish fillet", "frozen tempura"],
       cemilan: ["empek empek", "pempek", "empek-empek", "otak otak", "otak-otak", "jajanan", "cemilan", "snack", "keripik", "chips", "kue kering", "cookies", "biskuit", "crackers", "cokelat", "chocolate", "permen", "candy", "kue basah", "cake", "donat", "donut", "kue cubit", "kue", "pisang", "risol", "cireng", "pastel", "tahu isi", "mendoan", "perkedel", "martabak", "roti", "pisang goreng", "cireng", "cilok", "cimol", "risol", "pastel", "tahu isi", "tempe mendoan", "perkedel", "martabak", "roti bakar", "basreng", "keripik singkong", "keripik pedas", "seblak", "sosis bakar", "telur gulung", "lumpia", "kentang goreng", "bakwan", "comro", "combro", "misro"],
-      ikan: ["ikan", "fish", "salmon", "tuna", "sardine", "mackerel", "ikan bakar", "ikan goreng", "ikan kukus", "ikan asam manis", "ikan teri", "asin", "lele", "patin", "nila", "kembung", "tongkol", "bandeng", "salmon", "tuna", "sarden", "makarel", "mujair", "mujaer", "bawal", "kakap", "buntal", "cakalang", "tongkol", "kembung", "gurame"],
+      ikan: ["teri", "ikan", "fish", "salmon", "tuna", "sardine", "mackerel", "ikan bakar", "ikan goreng", "ikan kukus", "ikan asam manis", "ikan teri", "asin", "lele", "patin", "nila", "kembung", "tongkol", "bandeng", "salmon", "tuna", "sarden", "makarel", "mujair", "mujaer", "bawal", "kakap", "buntal", "cakalang", "tongkol", "kembung", "gurame"],
       ayam: ["ayam", "chicken", "ayam goreng", "fried chicken", "grilled chicken", "roasted chicken", "chicken curry", "chicken soup", "chicken satay", "chicken wings", "chicken breast", "chicken thigh", "chicken drumstick", "ayam bakar", "ayam penyet", "ayam kecap", "ayam bakso", "ayam rica-rica", "ayam sambal matah", "ayam teriyaki", "ayam saus tiram", "ayam lada hitam", "ayam bumbu rujak", "ayam geprek", "ayam bakar madu", "ayam panggang"],
-    sapi: ["sapi", "beef", "daging sapi", "beef steak", "beef rendang", "beef stir fry", "beef curry", "beef soup", "beef satay", "beef meatballs", "sapi bakar", "sapi goreng", "sapi lada hitam", "sapi saus tiram", "sapi bumbu rujak", "sapi panggang", "rendang", "sop buntut", "sapi asam manis", "sapi teriyaki", "sapi saus BBQ", "sapi saus tomat", "sapi saus lada hitam", "beef teriyaki"]
+      sapi: ["sapi", "beef", "daging sapi", "beef steak", "beef rendang", "beef stir fry", "beef curry", "beef soup", "beef satay", "beef meatballs", "sapi bakar", "sapi goreng", "sapi lada hitam", "sapi saus tiram", "sapi bumbu rujak", "sapi panggang", "rendang", "sop buntut", "sapi asam manis", "sapi teriyaki", "sapi saus BBQ", "sapi saus tomat", "sapi saus lada hitam", "beef teriyaki"]
     };
     return mapping[category] || [category];
   };
@@ -51,16 +51,22 @@ const filteredRecipes =
     ? []
     : recipes
         .filter((recipe) => {
-          const title = (recipe['Title Cleaned'] || '');
+          const ingredientsText = (recipe.Ingredients || '').toLowerCase();
+          const ingredientWords = ingredientsText
+            .split(/[^a-zA-Z0-9]+/) // split by non-alphanumeric characters
+            .map((word) => word.trim());
+
           return selectedCategories.every((cat) => {
-            const keywords = mapCategoryToIngredients(cat).map(k => k.toLowerCase());
-            return keywords.some((keyword) => {
-              const regex = new RegExp(`${keyword}`, 'i'); // Case-insensitive, partial match
-              return regex.test(title);
-            });
+            const keywords = mapCategoryToIngredients(cat).map((k) =>
+              k.toLowerCase()
+            );
+
+            return keywords.some((keyword) =>
+              ingredientWords.includes(keyword)
+            );
           });
         })
-        .sort((a, b) => (b.Loves || 0) - (a.Loves || 0)); // 🔥 Sort descending by Loves
+        .sort((a, b) => (b.Loves || 0) - (a.Loves || 0));
 
 
   const visibleRecipes = filteredRecipes.slice(0, visibleCount);
