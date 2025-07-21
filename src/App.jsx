@@ -51,12 +51,17 @@ const filteredRecipes =
     ? []
     : recipes
         .filter((recipe) => {
-          const title = (recipe['Title Cleaned'] || '').toLowerCase();
+          // Combine title and ingredients (if available)
+          const combinedText = (
+            (recipe['Title Cleaned'] || '') + ' ' +
+            (recipe['Ingredients'] || '')
+          ).toLowerCase();
+
           return selectedCategories.every((cat) => {
             const keywords = mapCategoryToIngredients(cat).map(k => k.toLowerCase());
             return keywords.some((keyword) => {
-              const regex = new RegExp(`\\b${keyword}\\b`, 'i'); // exact word match
-              return regex.test(title);
+              const regex = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'); // escape regex
+              return regex.test(combinedText);
             });
           });
         })
