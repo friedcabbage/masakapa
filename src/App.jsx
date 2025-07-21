@@ -51,19 +51,13 @@ const filteredRecipes =
     ? []
     : recipes
         .filter((recipe) => {
-          const ingredientsText = (recipe.Ingredients || '').toLowerCase();
-          const ingredientWords = ingredientsText
-            .split(/[^a-zA-Z0-9]+/) // split by non-alphanumeric characters
-            .map((word) => word.trim());
-
+          const title = (recipe['Title Cleaned'] || '').toLowerCase();
           return selectedCategories.every((cat) => {
-            const keywords = mapCategoryToIngredients(cat).map((k) =>
-              k.toLowerCase()
-            );
-
-            return keywords.some((keyword) =>
-              ingredientWords.includes(keyword)
-            );
+            const keywords = mapCategoryToIngredients(cat).map(k => k.toLowerCase());
+            return keywords.some((keyword) => {
+              const regex = new RegExp(`\\b${keyword}\\b`, 'i'); // exact word match
+              return regex.test(title);
+            });
           });
         })
         .sort((a, b) => (b.Loves || 0) - (a.Loves || 0));
